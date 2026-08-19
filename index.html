@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070707" />
+    <meta name="description" content="Yash Raj is a Class 12 PCM + Computer Science student exploring cybersecurity, AI/ML, Python and web development." />
+    <meta property="og:title" content="Yash Raj — Cybersecurity Enthusiast" />
+    <meta property="og:description" content="An interactive portfolio for Yash Raj: AI, web development and security." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/web-operative.svg" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>Yash Raj — Cybersecurity Enthusiast | AI • Web • Security</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#identity">Skip to content</a>
+
+    <div class="startup" id="startup" role="dialog" aria-modal="true" aria-labelledby="startup-title">
+      <div class="startup__halo"></div>
+      <div class="startup__content">
+        <p class="eyebrow">YR // PERSONAL OPERATING SYSTEM</p>
+        <h1 id="startup-title">SYSTEM<br /><span>INITIALIZATION</span></h1>
+        <ul class="boot-list" aria-label="System initialization status">
+          <li><span>NEURAL LINK</span><b>ONLINE</b></li>
+          <li><span>HUD CORE</span><b>ONLINE</b></li>
+          <li><span>WEB SYSTEM</span><b>ONLINE</b></li>
+          <li><span>MISSION DATABASE</span><b>ONLINE</b></li>
+          <li><span>SECURITY LAYER</span><b>ACTIVE</b></li>
+        </ul>
+        <p class="system-ready" aria-live="polite">SYSTEM READY</p>
+        <div class="startup__actions">
+          <button class="button button--primary" id="enter-system">ENTER SYSTEM <i aria-hidden="true">↗</i></button>
+          <button class="button button--quiet" id="skip-intro">SKIP INTRO</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-shell" id="site-shell" aria-hidden="true">
+      <div class="ambient" aria-hidden="true">
+        <div class="ambient__grid"></div><div class="ambient__web"></div><div class="ambient__noise"></div><div class="ambient__glow"></div>
+      </div>
+      <div id="cursor" class="cursor" aria-hidden="true"><span></span></div>
+      <div class="web-fluid-layer" id="web-fluid-layer" aria-hidden="true"></div>
+      <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress"></span></div>
+
+      <button class="hanging-spider" id="hanging-spider" aria-label="Hanging Spider-Man. Click to swing or drag to reposition." title="Click to swing · drag to reposition">
+        <span class="hanging-spider__cord"></span>
+        <span class="hanging-spider__figure"><img src="assets/images/spider-hanging.jpg" alt="Spider-Man hanging upside down from web" /></span>
+        <span class="hanging-spider__hint">CLICK / DRAG</span>
+      </button>
+
+      <header class="topbar">
+        <a href="#system" class="brand" aria-label="Yash Raj home"><span class="brand__mark">YR</span><span class="brand__word">WEB<span>_OS</span></span></a>
+        <div class="topbar__readout"><span class="status-dot"></span> SYSTEM STATUS: <b>ONLINE</b></div>
+        <div class="topbar__actions">
+          <button id="sound-toggle" class="hud-control" aria-pressed="false">SOUND: <b>OFF</b></button>
+          <button id="sense-toggle" class="hud-control" aria-pressed="false">SPIDER-SENSE: <b>OFF</b></button>
+          <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="navigation"><span class="menu-toggle__glyph" aria-hidden="true"><i></i><i></i></span><span>MENU</span></button>
+        </div>
+      </header>
+
+      <nav class="navigation" id="navigation" aria-label="Primary navigation" aria-hidden="true">
+        <div class="navigation__top"><span>SELECT DESTINATION</span><button class="icon-button" id="menu-close" aria-label="Close menu">×</button></div>
+        <div class="navigation__web" aria-hidden="true"></div>
+        <ol class="navigation__list">
+          <li><a href="#system"><em>01</em> SYSTEM <small>Start sequence</small></a></li>
+          <li><a href="#identity"><em>02</em> IDENTITY <small>Verified profile</small></a></li>
+          <li><a href="#missions"><em>03</em> MISSIONS <small>Project database</small></a></li>
+          <li><a href="#arsenal"><em>04</em> ARSENAL <small>Capabilities</small></a></li>
+          <li><a href="#achievements"><em>05</em> ACHIEVEMENTS <small>Signals earned</small></a></li>
+          <li><a href="#log"><em>06</em> MISSION LOG <small>Learning journey</small></a></li>
+          <li><a href="#channel"><em>07</em> SECURE CHANNEL <small>Establish contact</small></a></li>
+        </ol>
+        <p class="navigation__footer">KEYBOARD ACCESS ENABLED <span>ESC TO EXIT</span></p>
+      </nav>
+
+      <main>
+        <section class="hero section" id="system" aria-labelledby="hero-title">
+          <div class="hero__meta hero__meta--left"><span>REFLEX</span><p>Turning curiosity into<br />technical experiments.</p></div>
+          <div class="hero__meta hero__meta--right"><span>RESOLVE</span><p>Learning by building,<br />testing and solving.</p></div>
+          <div class="hero__visual-wrap">
+            <div class="frame-corners" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <div class="hero__viewport" id="hero-viewport">
+              <div class="viewport__topline"><span>YR-16 // OPERATIVE VIEW</span><span>◉ LIVE</span></div>
+              <div class="reticle reticle--hero" aria-hidden="true"></div>
+              <img class="hero__operative hero__operative--spider" src="assets/images/spider-hero.jpg" alt="Spider-Man action visual supplied by the site owner" />
+              <p class="viewport__caption">YASH RAJ // WEB-SLINGER MODE<br /><span>PERSONAL PORTFOLIO · GAME-STYLE INTERFACE</span></p>
+              <div class="scanline" aria-hidden="true"></div>
+            </div>
+            <div class="hero__ticker"><span>STATUS / ACTIVE</span><span>FOCUS / CYBERSECURITY · AI · WEB</span><span>LOCATION / GAYA, BIHAR</span></div>
+          </div>
+          <div class="hero__copy">
+            <p class="eyebrow">01 / SYSTEM · ACTIVE</p>
+            <h1 id="hero-title" data-parallax="8">YASH <span>RAJ</span></h1>
+            <p class="hero__role">CYBERSECURITY ENTHUSIAST <i></i> AI / WEB / SECURITY</p>
+            <p class="hero__manifesto">BUILD.<br />SECURE.<br /><em>EXPERIMENT.</em></p>
+            <a class="button button--primary hero__cta" href="#identity">ACCESS PROFILE <i aria-hidden="true">↓</i></a>
+          </div>
+          <div class="hero__side-id"><span>EDUCATION</span><b>CLASS 12</b><span>2025 — 2027</span></div>
+          <a class="scroll-cue" href="#identity"><span></span> SCROLL TO EXPLORE</a>
+        </section>
+
+        <section class="identity section section--padded" id="identity" aria-labelledby="identity-title">
+          <div class="section-label"><span>02</span><p>IDENTITY / VERIFIED</p></div>
+          <div class="identity__grid">
+            <div class="identity__scan panel">
+              <p class="hud-label"><i></i> BIOMETRIC PROFILE</p>
+              <div class="portrait-placeholder" role="img" aria-label="Replaceable profile image placeholder">
+                <div class="portrait-placeholder__ring"></div><span>YR</span><small>PORTRAIT ASSET<br />PENDING</small>
+              </div>
+              <div class="scan-lines" aria-hidden="true"></div>
+              <p class="asset-note">REPLACE: <code>assets/images/profile.jpg</code></p>
+            </div>
+            <div class="identity__content">
+              <p class="eyebrow">IDENTITY SCAN COMPLETE</p>
+              <h2 id="identity-title">CURIOUS BY<br /><span>DESIGN.</span></h2>
+              <p class="identity__intro">I’m Yash Raj, a Class 12 PCM + Computer Science student exploring the intersections of cybersecurity, AI/ML and web development. I learn best by making things: testing ideas, understanding systems and turning what I discover into working experiments.</p>
+              <dl class="identity__facts">
+                <div><dt>NAME</dt><dd>YASH RAJ</dd></div><div><dt>ROLE</dt><dd>CYBERSECURITY ENTHUSIAST</dd></div>
+                <div><dt>EDUCATION</dt><dd>CLASS 12 · PCM + CS</dd></div><div><dt>LOCATION</dt><dd>GAYA, BIHAR</dd></div>
+              </dl>
+              <div class="identity__prompt"><span>STATUS</span><b>ACTIVE BUILDER</b><p>Focused on hands-on learning, thoughtful problem solving and responsible security research.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="missions section section--padded" id="missions" aria-labelledby="missions-title">
+          <div class="section-heading"><div class="section-label"><span>03</span><p>MISSION DATABASE</p></div><p class="section-copy">Selected technical experiments. Open a mission to access its structured dossier.</p></div>
+          <h2 id="missions-title">SIGNAL<br /><span>DETECTED.</span></h2>
+          <div class="mission-grid" id="mission-grid"></div>
+        </section>
+
+        <section class="arsenal section section--padded" id="arsenal" aria-labelledby="arsenal-title">
+          <div class="section-heading"><div class="section-label"><span>04</span><p>ARSENAL / CAPABILITY NETWORK</p></div><p class="section-copy">No vanity percentages. Each connection reflects current hands-on work and active learning.</p></div>
+          <div class="arsenal__grid">
+            <div class="skill-network" id="skill-network" aria-label="Interactive skills network">
+              <div class="skill-network__core">YASH<br /><small>RAJ</small></div>
+              <button data-skill="Cybersecurity" style="--x:16%;--y:16%">CYBER<br />SECURITY</button>
+              <button data-skill="AI / ML" style="--x:75%;--y:10%">AI / ML</button>
+              <button data-skill="Web Development" style="--x:84%;--y:53%">WEB</button>
+              <button data-skill="Python" style="--x:63%;--y:83%">PYTHON</button>
+              <button data-skill="Linux" style="--x:20%;--y:78%">LINUX</button>
+              <button data-skill="UI Design" style="--x:5%;--y:48%">UI<br />DESIGN</button>
+              <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><line x1="50" y1="50" x2="16" y2="16"/><line x1="50" y1="50" x2="75" y2="10"/><line x1="50" y1="50" x2="84" y2="53"/><line x1="50" y1="50" x2="63" y2="83"/><line x1="50" y1="50" x2="20" y2="78"/><line x1="50" y1="50" x2="5" y2="48"/></svg>
+            </div>
+            <aside class="skill-panel panel" id="skill-panel" aria-live="polite"><p class="hud-label"><i></i> CAPABILITY DETECTED</p><h2 id="arsenal-title">SELECT A<br /><span>NODE.</span></h2><p>Explore the network to see how Yash is applying each area of study.</p></aside>
+          </div>
+          <div class="tool-belts" id="tool-belts"></div>
+        </section>
+
+        <section class="achievements section section--padded" id="achievements" aria-labelledby="achievements-title">
+          <div class="section-heading"><div class="section-label"><span>05</span><p>ACHIEVEMENTS / SIGNALS</p></div><p class="section-copy">Moments that shaped the current mission.</p></div>
+          <h2 id="achievements-title">PROGRESS<br /><span>RECORDED.</span></h2>
+          <div class="achievement-grid" id="achievement-grid"></div>
+          <div class="certifications panel"><p class="hud-label"><i></i> CERTIFICATION ARCHIVE</p><div id="certification-list"></div></div>
+        </section>
+
+        <section class="log section section--padded" id="log" aria-labelledby="log-title">
+          <div class="section-heading"><div class="section-label"><span>06</span><p>MISSION LOG / TIMELINE</p></div><p class="section-copy">A short record of the journey so far.</p></div>
+          <div class="log__layout"><div><h2 id="log-title">MOMENTUM,<br /><span>NOT MYTHS.</span></h2><p>Every entry below is a real step in an ongoing learning journey.</p><div class="xp-card"><span>LEVEL 04</span><b>SECURITY EXPLORER</b><i><u></u></i><small>Interface progress indicator — not a formal qualification.</small></div></div><ol class="timeline" id="timeline"></ol></div>
+        </section>
+
+        <section class="channel section section--padded" id="channel" aria-labelledby="channel-title">
+          <div class="section-label"><span>07</span><p>SECURE CHANNEL / OPEN</p></div>
+          <div class="channel__grid"><div><h2 id="channel-title">LET'S BUILD<br /><span>SOMETHING REAL.</span></h2><p class="channel__lede">Have a thoughtful opportunity, a technical question or a project worth exploring? Send a transmission.</p><div class="contact-list"><a href="mailto:akhisweety01@gmail.com"><span>EMAIL</span>akhisweety01@gmail.com <i>↗</i></a><a href="tel:+919060170251"><span>PHONE</span>+91 9060170251 <i>↗</i></a><div><span>LOCATION</span>GAYA, BIHAR</div><div><span>LANGUAGES</span>ENGLISH · HINDI</div></div></div><form class="contact-form panel" id="contact-form"><p class="hud-label"><i></i> TRANSMISSION CONSOLE</p><label>NAME <input name="name" required autocomplete="name" placeholder="YOUR NAME" /></label><label>EMAIL <input name="email" type="email" required autocomplete="email" placeholder="you@example.com" /></label><label>MESSAGE <textarea name="message" required placeholder="WRITE YOUR MESSAGE"></textarea></label><button class="button button--primary" type="submit">TRANSMIT <i aria-hidden="true">↗</i></button><p class="form-note" id="form-note">Opens your mail app — no message is sent from this static site.</p></form></div>
+        </section>
+        <section class="finale" id="finale" aria-labelledby="finale-title">
+          <div class="finale__image" aria-hidden="true"></div>
+          <svg class="finale__web" viewBox="0 0 1000 500" preserveAspectRatio="none" aria-hidden="true"><path d="M-30 470 C180 210 290 550 495 272 S805 42 1040 -80"/><path d="M-45 485 C170 230 304 570 515 290 S828 58 1050 -65"/></svg>
+          <div class="finale__copy"><p class="eyebrow">08 / FINAL SEQUENCE</p><h2 id="finale-title">SWING<br /><span>AWAY.</span></h2><p>Mission complete. The city is still calling.</p><button class="button button--primary" id="final-swing">INITIATE FINAL SWING <i aria-hidden="true">↗</i></button></div>
+          <p class="finale__status">WEB LINE // ARMED <span>CLICK TO LAUNCH</span></p>
+        </section>
+      </main>
+
+      <footer class="footer"><div><p class="eyebrow">SYSTEM STATUS: ONLINE</p><h2>YASH RAJ</h2><p>AI / SECURITY / WEB</p></div><div class="footer__links"><button disabled title="Add your GitHub URL in data/portfolio.js">GITHUB <small>ADD LINK</small></button><button disabled title="Add your LinkedIn URL in data/portfolio.js">LINKEDIN <small>ADD LINK</small></button></div><button class="swing-away" id="swing-away">RETURN TO ROOFTOP <span>↑</span></button><small>© 2026 Yash Raj</small></footer>
+
+      <aside class="web-ai" id="web-ai" aria-live="polite"><button class="web-ai__toggle" id="web-ai-toggle" aria-expanded="false" aria-controls="web-ai-panel"><span class="status-dot"></span> WEB AI</button><div class="web-ai__panel" id="web-ai-panel" hidden><div class="web-ai__header"><div><p class="hud-label"><i></i> WEB AI</p><b>STATUS: ONLINE</b></div><button class="icon-button" id="web-ai-close" aria-label="Close Web AI">×</button></div><div class="web-ai__messages" id="web-ai-messages"><p><b>WEB AI</b> Ask me about Yash’s projects, skills, education or achievements.</p></div><div class="web-ai__suggestions"><button data-question="What projects has Yash built?">PROJECTS</button><button data-question="What technologies does he use?">TECH</button><button data-question="What certifications does he have?">CERTS</button></div><form id="web-ai-form"><label class="sr-only" for="web-ai-input">Ask Web AI</label><input id="web-ai-input" placeholder="ASK WEB AI..." autocomplete="off" /><button aria-label="Send question">↗</button></form></div></aside>
+
+      <section class="terminal" id="terminal" aria-label="Developer terminal" hidden><div class="terminal__bar"><span><i></i> YR_WEB_OS // TERMINAL</span><button class="icon-button" id="terminal-close" aria-label="Close terminal">×</button></div><div class="terminal__output" id="terminal-output"><p>YR terminal online. Type <b>help</b> to access commands.</p></div><form id="terminal-form"><span>›</span><label class="sr-only" for="terminal-input">Terminal command</label><input id="terminal-input" autocomplete="off" spellcheck="false" placeholder="ENTER COMMAND" /><button class="terminal__run" type="submit" aria-label="Run terminal command">RUN</button></form></section>
+    </div>
+
+    <dialog class="dossier" id="dossier"><button class="dossier__close icon-button" id="dossier-close" aria-label="Close dossier">×</button><div class="dossier__rail"></div><div id="dossier-content"></div></dialog>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
